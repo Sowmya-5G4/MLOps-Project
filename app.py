@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 app.config['GENERATIVE_API_KEY'] = 'AIzaSyCc4nwwo9RnY3J3YrWdo3DGh91fU_dPz_o'
-app.config['GEN_MODEL_NAME'] = 'gemini-1.5-flash'
+app.config['GEN_MODEL_NAME'] = 'gemini-2.5-flash'
 
 genai.configure(api_key=app.config['GENERATIVE_API_KEY'])
 genModel = genai.GenerativeModel(app.config['GEN_MODEL_NAME'])
